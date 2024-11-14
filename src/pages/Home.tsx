@@ -1,3 +1,6 @@
+// css
+import './Home.css'
+
 import { useState } from 'react'
 
 // components
@@ -13,6 +16,12 @@ const mockedCars: Car[] = [
   {id: 1, name: 'Fiat Uno 2008', price: 40000},
   {id: 2, name: 'Gol', price: 50000},
   {id: 3, name: 'Hilux', price: 80000},
+  {id: 1, name: 'Fiat Uno 2008', price: 40000},
+  {id: 2, name: 'Gol', price: 50000},
+  {id: 3, name: 'Hilux', price: 80000},
+  {id: 1, name: 'Fiat Uno 2008', price: 40000},
+  {id: 2, name: 'Gol', price: 50000},
+  {id: 3, name: 'Hilux', price: 80000},
 ]
 
 type Props = {}
@@ -23,9 +32,11 @@ const Home = (props: Props) => {
 
 
   return (<div className='container'>
-  <h1>Home Page</h1>
+  <h1>Carros à venda</h1>
   
-  {cars.map(car => <CarElement name={car.name} price={car.price} /> )}
+  <div className="cars-container">
+    {cars.map(car => <CarElement name={car.name} price={car.price} /> )}
+  </div>
   
   </div>)
 }
