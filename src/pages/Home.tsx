@@ -1,5 +1,8 @@
 import { useState } from 'react'
 
+// components
+import CarElement from '../components/Car'
+
 type Car = {
   id: number;
   name: string;
@@ -21,6 +24,8 @@ const Home = (props: Props) => {
 
   return (<div className='container'>
   <h1>Home Page</h1>
+  
+  {cars.map(car => <CarElement name={car.name} price={car.price} /> )}
   
   </div>)
 }

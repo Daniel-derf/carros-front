@@ -1,13 +1,17 @@
+import './Car.css'
+
 type Car = {
-  id: number;
   name: string;
   price: number;
 }
 
-function Car({}: Car) {
+function CarElement({name, price}: Car) {
   return (
-    <div>Car</div>
+    <div className="car">
+      <h2>Name: {name}</h2>
+      <h2>Price: {price}</h2>
+    </div>
   )
 }
 
-export default Car
+export default CarElement
