@@ -1,5 +1,4 @@
 .cars-container {
-  height: 90vh;
   width: 100%;
   border: 2px solid blue;
   display: grid;
@@ -12,8 +11,9 @@
 .cars-container div {
   padding: 20px;
   width: 350px;
+  color: white;
 
-  height: 350px;
+  height: 400px;
 }
 
 @media only screen and (max-width: 500px) {
