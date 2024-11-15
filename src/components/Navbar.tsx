@@ -8,7 +8,9 @@ type Props = {}
 const Navbar = (props: Props) => {
   return (
   <nav className='navbar'>
-    <NavLink to="/"><img className='navbar-icon' src={iconImg} alt="" /></NavLink>
+    <div className="navbar-icon">
+      <NavLink to="/"><img className='navbar-icon-img' src={iconImg} alt="" /></NavLink>  
+    </div>
 
     <div className='navbar-options'>
       <NavLink to="/">Início</NavLink>
