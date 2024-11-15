@@ -1,9 +1,9 @@
 .navbar{
-  padding: 25px;
+  padding: 25px 40px;
   display: flex;
   font-size: 30px;
   border: 2px solid red;
-  gap: 20%;
+  gap: 35%;
   background-color: rgba(44, 2, 2, 0.723);
 }
 
@@ -19,12 +19,22 @@
 }
 
 .navbar-icon {
-  display: flex;
-  width: 56px;
+  width: 8%
 }
 
 .navbar-icon-img {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .navbar{
+    gap: 20%;
+  }
+
+  .navbar-icon {
+    width: 60px;
+  }
+  
 }
 
 
