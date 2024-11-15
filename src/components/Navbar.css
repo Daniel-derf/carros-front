@@ -1,0 +1,22 @@
+.navbar{
+  padding: 25px;
+  display: flex;
+  font-size: 30px;
+  border: 2px solid red;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid blue;
+}
+
+.navbar-icon {
+  width: 30%;
+}

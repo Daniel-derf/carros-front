@@ -1,7 +1,9 @@
 * {
   border: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body{
@@ -9,7 +11,6 @@ body{
 }
 
 .container{
-  border: 2px solid red;
   height: auto;
   display: flex;
   flex-direction: column;
